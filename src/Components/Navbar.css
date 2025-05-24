@@ -1,0 +1,52 @@
+/* Navbar container */
+.navbar {
+  background-color: #165eca !important; /* Set blue background */
+}
+
+/* Navbar brand style */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff !important; /* White text */
+}
+
+/* Navbar links */
+.nav-link {
+  margin-left: 1rem;
+  color: #ffffff !important; /* White links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e0e0e0 !important; /* Light gray on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+  color: #ffdd57 !important; /* Yellow highlight for active link */
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* Toggler icon override */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* Make toggler icon white */
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Responsive (mobile) nav background */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: #165eca;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,132 @@
+/* src/Components/Home.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem; /* Space between content and image */
+}
+
+.hero-content {
+  width: 50%;
+  text-align: left;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #666;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: #6a5acd; /* MediumOrchid */
+  color: white;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #6a5acd;
+  border: 1px solid #6a5acd;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #6a5acd;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #6a5acd;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+}
